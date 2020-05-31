@@ -74,7 +74,6 @@ vendor.audio.feature.usb_offload_burst_mode.enable=true
 vendor.audio.feature.vbat.enable=true
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.output.suspend.supported=false
-vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.track.enable=false
@@ -86,7 +85,7 @@ vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
+vendor.audio_hal.period_size=240
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
