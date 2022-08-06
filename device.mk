@@ -307,6 +307,10 @@ PRODUCT_PACKAGES += \
 # LMK
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.lmk.force_inkernel_lmk=true
+    
+# Light
+PRODUCT_PACKAGES += \
+    lights.lisa
 
 # Media
 PRODUCT_PACKAGES += \
