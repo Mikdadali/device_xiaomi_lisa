@@ -148,6 +148,8 @@ vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/com.dsi.ant@1.0.so
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # CAcert
 -vendor/app/CACertService/CACertService.apk
@@ -990,6 +992,7 @@ vendor/lib/c2.dolby.hevc.sec.dec.so
 vendor/lib/c2.dolby.store.so
 vendor/lib/libdolbyottcameracontrol.so
 vendor/lib/libdovi.so
+vendor/lib/libavservices_minijail_vendor.so
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
@@ -1299,6 +1302,10 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
+vendor/lib64/ls_nq_client.so
+vendor/lib64/jcos_nq_client.so
+vendor/lib64/se_nq_extn_client.so
+vendor/lib64/libchrome.so
 
 # Secure Execution Environment Communicator
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
