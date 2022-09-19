@@ -810,4 +810,8 @@
 
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
+    <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
+    <string name="config_netflixSpoofModel" translatable="false">M2101K9G</string>
+
 </resources>
