@@ -73,6 +73,14 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
     }
 };
 
+void load_miuicamera_properties() {
+    property_override("ro.product.mod_device", "lisa_global");
+    property_override("vendor.camera.aux.packagelist", "com.android.camera");
+    property_override("persist.vendor.camera.privapp.list", "com.android.camera");
+    property_override("ro.com.google.lens.oem_camera_package", "com.android.camera");
+    property_override("ro.miui.notch", "1");
+}
+
 void vendor_load_properties() {
     std::string region;
     std::string sku;
@@ -117,7 +125,7 @@ void vendor_load_properties() {
     set_ro_product_prop("brand", brand);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
-
+    load_miuicamera_properties();
     property_override("ro.build.description", description.c_str());
     property_override("ro.product.mod_device", mod_device.c_str());
 }

@@ -12,11 +12,12 @@ BOARD_VENDOR := xiaomi
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
 
-# Inherit from proprietary files for miuicamera
--include vendor/xiaomi/lisa-miuicamera/products/board.mk
-
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
+
+# Inherit from proprietary files
+include vendor/xiaomi/lisa/BoardConfigVendor.mk
+-include vendor/xiaomi/lisa-miuicamera/products/board.mk
 
 # A/B
 AB_OTA_UPDATER := true
