@@ -352,10 +352,6 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx.vendor \
     libstagefright_omx.vendor
 
-# Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor
-
 # Network
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
