@@ -14,3 +14,4 @@ allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
 
 hal_attribute_hwservice(hal_camera, hal_xiaomi_camera_hwservice)
 add_hwservice(hal_camera_default, vendor_hal_cameraperf_hwservice)
+add_hwservice(hal_camera_default, hal_camerapostproc_xiaomi_hwservice)
