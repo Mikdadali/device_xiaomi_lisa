@@ -11,11 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lisa device
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
-# Inherit some common PixelOS stuff
+# Inherit some common SuperiorOS stuff
 $(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+SUPERIOR_OFFICIAL := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# Gapps 
+# Gapps
 TARGET_GAPPS_ARCH := arm64
 SUPERIOR_GAPPS := full
 
