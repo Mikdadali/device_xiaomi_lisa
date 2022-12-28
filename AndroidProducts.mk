@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_lisa.mk
+    $(LOCAL_DIR)/aosp_lisa.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_lisa-user \
-    superior_lisa-userdebug \
-    superior_lisa-eng
+    aosp_lisa-user \
+    aosp_lisa-userdebug \
+    aosp_lisa-eng
