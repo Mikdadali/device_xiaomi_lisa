@@ -77,9 +77,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml
 
-# Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/lisa-miuicamera/products/miuicamera.mk)
-
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -126,6 +123,8 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
+$(call inherit-product-if-exists, device/xiaomi/lisa-miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
@@ -142,6 +141,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
