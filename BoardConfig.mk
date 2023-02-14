@@ -17,7 +17,6 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/lisa/BoardConfigVendor.mk
--include vendor/xiaomi/lisa-miuicamera/products/board.mk
 
 # A/B
 AB_OTA_UPDATER := true
