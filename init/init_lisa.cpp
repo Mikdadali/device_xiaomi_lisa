@@ -117,7 +117,6 @@ void vendor_load_properties() {
     set_ro_product_prop("brand", brand);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
-    load_miuicamera_properties();
     property_override("ro.build.description", description.c_str());
     property_override("ro.product.mod_device", mod_device.c_str());
 }
